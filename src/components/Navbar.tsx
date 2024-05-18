@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState<boolean>(false);
     return (
-        <nav className="flex justify-between items-center px-24 py-6 border-b">
-            <h1 className="text-center text-2xl font-bold">DeeezineHub</h1>
+        <nav className="flex justify-between items-center px-8 md:px-24 py-6 border-b">
+            <h1 className="text-center text-3xl md:text-2xl font-bold">DeeezineHub</h1>
 
             {!showMenu ?
                 (
