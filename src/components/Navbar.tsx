@@ -10,7 +10,7 @@ export default function Navbar() {
                 (
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="cursor-pointer md:hidden w-6 h-6 text-gray-300" onClick={() => setShowMenu(true)}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"  />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                 )
                 :
@@ -21,7 +21,7 @@ export default function Navbar() {
                     </svg>
                 )}
 
-            <ul className={`absolute md:relative left-0 top-20 md:top-0 bg-primary md:text-gray-300 text-lg md:bg-secondary justify-center w-full md:w-auto h-14 md:h-auto ${showMenu? 'flex opacity-100' : 'opacity-0 invisible md:flex'} md:visible md:opacity-100 items-center gap-x-4 transition-opacity ease-linear`}>
+            <ul className={`absolute md:relative left-0 top-20 md:top-0 bg-primary md:text-gray-300 text-lg md:bg-secondary justify-center w-full md:w-auto h-14 md:h-auto ${showMenu ? 'flex opacity-100' : 'opacity-0 invisible md:flex'} md:visible md:opacity-100 items-center gap-x-4 transition-opacity ease-linear`}>
                 <li className="cursor-pointer hover:underline">Home</li>
                 <li className="cursor-pointer hover:underline">Work</li>
                 <li className="cursor-pointer hover:underline">Team</li>
