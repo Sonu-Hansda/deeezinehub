@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState<boolean>(false);
     return (
-        <nav className="flex justify-between items-center px-8 md:px-24 py-6 bg-secondary">
-            <h1 className="text-center text-3xl font-bold text-primary">DeeezineHub</h1>
+        <nav className="flex justify-between md:justify-normal items-center px-8 md:px-24 py-6 bg-secondary">
+            <h1 className="text-center text-2xl font-bold text-primary border rounded-full p-2 mr-12">DH</h1>
 
             {!showMenu ?
                 (
@@ -21,11 +21,13 @@ export default function Navbar() {
                     </svg>
                 )}
 
-            <ul className={`absolute md:relative left-0 top-20 md:top-0 bg-primary md:text-gray-300 text-lg md:bg-secondary justify-center w-full md:w-auto h-14 md:h-auto ${showMenu ? 'flex opacity-100' : 'opacity-0 invisible md:flex'} md:visible md:opacity-100 items-center gap-x-4 transition-opacity ease-linear`}>
-                <li className="cursor-pointer hover:underline">Home</li>
-                <li className="cursor-pointer hover:underline">Work</li>
-                <li className="cursor-pointer hover:underline">Team</li>
-                <li className="p-2 rounded-lg md:bg-[#3d3e42] md:border md:border-primary">contact us</li>
+            <ul className={`absolute md:relative left-0 top-20 md:top-0 bg-primary md:text-gray-300 text-lg md:bg-secondary justify-center md:justify-between w-full md:w-full h-14 md:h-auto ${showMenu ? 'flex opacity-100' : 'opacity-0 invisible md:flex'} md:visible md:opacity-100 items-center gap-x-4 transition-opacity ease-linear`}>
+                <div className="flex gap-x-4 md:gap-x-6">
+                    <li className="cursor-pointer hover:underline">Home</li>
+                    <li className="cursor-pointer hover:underline">Work</li>
+                    <li className="cursor-pointer hover:underline">Team</li>
+                </div>
+                <li className="p-2 rounded-lg md:bg-[#3d3e42] md:border md:border-primary cursor-pointer">contact us</li>
             </ul>
         </nav>
     );
