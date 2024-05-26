@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { scrollContext, scrollContextType } from "../App";
 
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState<boolean>(false);
+    const scrollMethods = useContext<scrollContextType|undefined>(scrollContext)
     return (
         <nav className="flex justify-between md:justify-normal items-center px-8 md:px-24 py-6 bg-secondary">
             <h1 className="text-center text-2xl font-bold text-primary border rounded-full p-2 mr-12">DH</h1>
@@ -25,9 +27,9 @@ export default function Navbar() {
                 <div className="flex gap-x-4 md:gap-x-6">
                     <li className="cursor-pointer hover:underline">Home</li>
                     <li className="cursor-pointer hover:underline">Work</li>
-                    <li className="cursor-pointer hover:underline">Team</li>
+                    <li onClick={scrollMethods?.scrollToTeam} className="cursor-pointer hover:underline">Team</li>
                 </div>
-                <li className="p-2 rounded-lg md:bg-[#3d3e42] md:border md:border-primary cursor-pointer">contact us</li>
+                <li onClick={scrollMethods?.scrollToContact} className="p-2 rounded-lg md:bg-[#3d3e42] md:border md:border-primary cursor-pointer">contact us</li>
             </ul>
         </nav>
     );
