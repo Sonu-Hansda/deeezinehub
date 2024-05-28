@@ -10,6 +10,7 @@ import Work from "./sections/Work"
 export type scrollContextType = {
   scrollToContact: ()=>void;
   scrollToTeam: ()=> void;
+  scrollToWork: ()=> void;
 };
 
 export const scrollContext = createContext<scrollContextType|undefined>(undefined);
@@ -17,6 +18,7 @@ export const scrollContext = createContext<scrollContextType|undefined>(undefine
 export default function App() {
   const contactSection = useRef<HTMLDivElement>(null);
   const teamSection = useRef<HTMLDivElement>(null);
+  const workSection = useRef<HTMLDivElement>(null);
 
   const scrollToContact = ()=>{
     if(contactSection.current){
@@ -29,8 +31,15 @@ export default function App() {
       teamSection.current.scrollIntoView({behavior:'smooth'});
     }
   }
+
+  const scrollToWork = ()=>{
+    if(workSection.current){
+      workSection.current.scrollIntoView({behavior:'smooth'});
+    }
+  }
+
   return (
-    <scrollContext.Provider value={{scrollToContact,scrollToTeam}}>
+    <scrollContext.Provider value={{scrollToContact,scrollToTeam,scrollToWork}}>
       <main className="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0" >
         <div className="snap-always snap-center" id="page1">
           <Header />
@@ -39,7 +48,7 @@ export default function App() {
         <div className="snap-always snap-center" id="page2">
         <HowWeWork/>
         </div>
-        <div className="snap-always snap-center" id="page3">
+        <div ref={workSection} className="snap-always snap-center" id="page3">
           <Work />
         </div>
         <div ref={teamSection} className="snap-always snap-center" id="page4">

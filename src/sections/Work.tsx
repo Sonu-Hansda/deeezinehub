@@ -30,9 +30,9 @@ export default function Work() {
     };
 
     return (
-        <section className="p-24 bg-gray-200">
+        <section className="p-24 bg-secondary">
             <div>
-                <h1 className="text-3xl mb-6 text-secondary font-bold">Work</h1>
+                <h1 className="text-5xl mb-6 text-white font-bold">Work</h1>
                 <div className="grid md:grid-cols-3 gap-2">
                     {images.slice(0, showMore ? images.length : 6).map((image, index) => (
                         <img

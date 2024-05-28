@@ -26,7 +26,7 @@ export default function Navbar() {
             <ul className={`absolute md:relative left-0 top-20 md:top-0 bg-primary md:text-gray-300 text-lg md:bg-secondary justify-center md:justify-between w-full md:w-full h-14 md:h-auto ${showMenu ? 'flex opacity-100' : 'opacity-0 invisible md:flex'} md:visible md:opacity-100 items-center gap-x-4 transition-opacity ease-linear`}>
                 <div className="flex gap-x-4 md:gap-x-6">
                     <li className="cursor-pointer hover:underline">Home</li>
-                    <li className="cursor-pointer hover:underline">Work</li>
+                    <li onClick={scrollMethods?.scrollToWork} className="cursor-pointer hover:underline">Work</li>
                     <li onClick={scrollMethods?.scrollToTeam} className="cursor-pointer hover:underline">Team</li>
                 </div>
                 <li onClick={scrollMethods?.scrollToContact} className="p-2 rounded-lg md:bg-[#3d3e42] md:border md:border-primary cursor-pointer">contact us</li>
