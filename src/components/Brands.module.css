@@ -1,0 +1,19 @@
+/* brands.css */
+
+.marquee-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    animation: marquee 20s linear infinite;
+    background-color: rebeccapurple;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% + 100vw));
+    }
+  }
+  
