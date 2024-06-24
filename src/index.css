@@ -8,7 +8,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@keyframes marquee {
+@keyframes marquee-horizontal {
   0% {
     transform: translateX(-120%);
   }
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 640px) {
-  @keyframes marquee {
+  @keyframes marquee-horizontal {
     0% {
       transform: translateX(-50%);
     }
@@ -27,5 +27,26 @@
     100% {
       transform: translateX(100%);
     }
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+@keyframes marquee-vertical-reverse {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-120%);
   }
 }

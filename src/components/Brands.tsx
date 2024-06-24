@@ -11,7 +11,7 @@ const Brands: React.FC = () => {
   return (
     <section className="py-12 md:py-4">
       <div className="mx-auto px-4 overflow-hidden">
-        <div className="w-full flex space-x-12 items-start animate-[marquee_20s_linear_infinite]">
+        <div className="w-full flex space-x-12 items-start animate-[marquee-horizontal_20s_linear_infinite]">
           <img src={AdobePS} alt="Adobe Photoshop" className="h-16" />
           <img src={AdobeXD} alt="Adobe XD" className="h-16" />
           <img src={Figma} alt="Figma" className="h-16" />
