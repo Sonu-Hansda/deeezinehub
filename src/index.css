@@ -32,7 +32,7 @@
 
 @keyframes marquee-vertical {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-98%);
   }
 
   100% {
@@ -43,10 +43,10 @@
 
 @keyframes marquee-vertical-reverse {
   0% {
-    transform: translateY(100%);
+    transform: translateY(98%);
   }
 
   100% {
-    transform: translateY(-120%);
+    transform: translateY(-100%);
   }
 }
