@@ -1,11 +1,9 @@
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import splash from "../assets/splash.png";
-import { useContext, useState } from "react";
-import { scrollContext, scrollContextType } from "../App";
 
 const Navbar: React.FC = () => {
     const [showMenu, setShowMenu] = useState<boolean>(false);
-    const scrollMethods = useContext<scrollContextType | undefined>(scrollContext);
 
     return (
         <nav className="flex flex-wrap justify-between items-center px-4 md:px-24 py-4 md:py-6">
