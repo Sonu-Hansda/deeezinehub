@@ -7,7 +7,7 @@ import AdobeXD from "../assets/brands/adobe-xd.svg";
 
 const Hero: React.FC = () => {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "Moorning Desk";
+  const fullText = "Auutomate Your Business with Cutting-Edge AI Technology";
 
   useEffect(() => {
     let index = 0;
@@ -28,12 +28,14 @@ const Hero: React.FC = () => {
       <div className="relative z-10 flex flex-col justify-center mx-auto px-4 text-start">
         <h1 className="text-4xl md:text-8xl font-bold mb-4 relative">
           <span className="inline-block">
-            {displayedText}
-            <span className="font-extralight animate-blink">|</span>
+           Morning Desk
           </span>
         </h1>
         <h2 className="text-green-400 text-2xl md:text-3xl font-semibold mb-4">
-        Automate Your Business with Cutting-Edge AI Technology
+        <span className="inline-block">
+           {displayedText}
+            <span className="font-extralight animate-blink">|</span>
+          </span>
         </h2>
         <div>
         <button className='bg-gray-200 p-4 text-black rounded-sm hover:scale-105 transition-all ease-linear mr-8'>Get Started</button>

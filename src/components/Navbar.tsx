@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
     const [showMenu, setShowMenu] = useState<boolean>(false);
 
     return (
-        <nav className="flex flex-wrap justify-between items-center px-4 md:px-24 py-4 md:py-6">
+        <nav className="flex flex-wrap justify-between items-center px-4 md:px-24 py-4 md:py-0">
             <div className="w-full md:w-auto flex justify-between items-center">
                 <img className="h-20 w-20 z-50" src={logo} alt="site logo"/>
                 {!showMenu ? (
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                     </svg>
                 )}
             </div>
-                <img src={splash} alt="Splash pattern" className="absolute top-[-26rem] p-32 right-[-20rem] -rotate-12"/>
+                <img src={splash} alt="Splash pattern" className="absolute top-[-27rem] p-32 right-[-20rem] -rotate-6"/>
             <ul className={`${showMenu ? "flex" : "hidden"
                 } bg-white font-semibold md:flex md:relative md:bg-transparent text-black rounded-sm md:text-white justify-center md:justify-between w-full md:w-auto h-auto md:h-auto md:items-center gap-x-4 transition-opacity ease-linear mt-2`}>
                 <div className="flex flex-row items-center gap-4 md:gap-6">
