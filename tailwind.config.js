@@ -20,6 +20,9 @@ export default {
         }
       },
     },
+    fontFamily:{
+      'findel':['Findel'],
+    },
   },
   plugins: [],
 }

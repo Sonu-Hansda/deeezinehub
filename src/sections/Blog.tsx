@@ -4,10 +4,10 @@ import bgImage from '../assets/background.png';
 export default function Blog() {
     return (
         <>
-            <section className="bg-[#ebf0ea] pb-20 pt-5">
+            <section className="pb-10 pt-5">
                 <div className="container mx-auto px-4 relative">
                     <div className='flex items-baseline relative'>
-                        <h2 className="w-[20%] text-3xl md:text-4xl font-bold text-center mb-10">Our <br />BLOGS</h2>
+                        <h2 className="w-[20%] text-3xl md:text-4xl font-bold text-center mb-10">Our <span className='block font-findel'> BLOGS</span></h2>
                         <p className='w-[60%] text-green-800'>Morning Desk leverages AI to streamline operations with innovative chatbot solutions, prioritizing efficiency and exceptional customer experiences.</p>
                         <RxDragHandleDots1 className='absolute right-0 w-40 h-20 rotate-90 text-green-800' />
                     </div>

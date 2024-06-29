@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  @font-face {
+    font-family: 'findel';
+    src: url('./assets/Findel-Display-Regular.otf') format('opentype');
+  }
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
