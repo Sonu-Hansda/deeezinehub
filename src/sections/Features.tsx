@@ -14,8 +14,9 @@ const Features: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Feature 1 */}
-            <div style={{backgroundImage:`url(${bgImage})`}} className="relative flex flex-col items-center rounded-xl text-white p-4 shadow-xl">
-              <div className='w-full h-full bg-black absolute top-0 rounded-xl opacity-55'/>
+            <div className="relative flex flex-col items-center rounded-3xl text-white p-4">
+              <img src={bgImage} className='absolute top-0 left-0 w-full h-full rounded-3xl blur-sm' />
+              <div className='w-full h-full bg-black absolute top-0 rounded-3xl opacity-55'/>
               <div className='p-4 z-50'>
               <h3 className='text-3xl font-bold mb-4'>Appointment Scheduling Automation</h3>
               <ul className='list-disc p-2'>
@@ -30,8 +31,9 @@ const Features: React.FC = () => {
             </div>
 
             {/* Feature 2 */}
-            <div style={{backgroundImage:`url(https://img.freepik.com/free-vector/fuchsia-silk-draped-fabric-background_33099-1667.jpg?t=st=1719668461~exp=1719672061~hmac=afb0e7c9b37cb8e880833af053fc4854ba870b33e7b18ad2c2962a5f8df454de&w=1060)`}} className="relative flex flex-col items-center rounded-xl text-white p-4 shadow-xl">
-              <div className='w-full h-full bg-black absolute top-0 rounded-xl opacity-55'/>
+            <div className="relative flex flex-col items-center rounded-3xl text-white p-4 shadow-xl">
+            <img src={'https://img.freepik.com/free-vector/fuchsia-silk-draped-fabric-background_33099-1667.jpg?t=st=1719668461~exp=1719672061~hmac=afb0e7c9b37cb8e880833af053fc4854ba870b33e7b18ad2c2962a5f8df454de&w=1060'} className='absolute top-0 left-0 w-full h-full rounded-3xl blur-sm' />
+              <div className='w-full h-full bg-black absolute top-0 rounded-3xl opacity-55'/>
               <div className='p-4 z-50'>
               <h3 className='text-3xl font-bold mb-4'>Customer Support Automation</h3>
               <ul className='list-disc p-2'>
@@ -46,8 +48,9 @@ const Features: React.FC = () => {
             </div>
 
             {/* Feature 3 */}
-            <div style={{backgroundImage:`url(https://img.freepik.com/free-vector/realistic-glossy-black-background_23-2150069283.jpg?t=st=1719666824~exp=1719670424~hmac=518e6a33fe94ec93b07fe18f44f06a90ae7d890d54408c5d360fa1efb6f17bdd&w=1060)`}} className="relative flex flex-col items-center rounded-xl text-white p-4 shadow-xl">
-              <div className='w-full h-full bg-black absolute top-0 rounded-xl opacity-55'/>
+            <div className="relative flex flex-col items-center rounded-3xl text-white p-4 shadow-xl">
+            <img src={'https://img.freepik.com/free-vector/realistic-glossy-black-background_23-2150069283.jpg?t=st=1719666824~exp=1719670424~hmac=518e6a33fe94ec93b07fe18f44f06a90ae7d890d54408c5d360fa1efb6f17bdd&w=1060'} className='absolute top-0 left-0 w-full h-full rounded-3xl blur-sm' />
+              <div className='w-full h-full bg-black absolute top-0 rounded-3xl opacity-55'/>
               <div className='p-4 z-50'>
               <h3 className='text-3xl font-bold mb-4'>Sales and Lead Generation Automation</h3>
               <ul className='list-disc p-2'>

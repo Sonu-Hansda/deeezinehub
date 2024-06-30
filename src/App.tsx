@@ -42,8 +42,10 @@ export default function App() {
 
   return (
     <scrollContext.Provider value={{ scrollToContact, scrollToAbout, scrollToFeature }}>
-      <main className="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0 max-w-full overflow-hidden" >
-        <div style={{ backgroundImage: `url(${backgroundImage})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center', objectFit: 'cover', backgroundSize:'cover' }} className="relative snap-always snap-center" id="page1">
+      {/* snap-y snap-mandatory */}
+      <main className="overflow-y-scroll h-screen flex-grow z-0 max-w-full overflow-hidden" >
+        <div className="relative snap-always snap-center" id="page1">
+          <img src={backgroundImage} className="absolute left-0 top-0 w-full h-full bg-no-repeat bg-center object-cover bg- bg-cover blur-sm" />
           <div className="w-full h-full absolute top-0 left-0 bg-black opacity-60"/>
           <Header />
           <Hero />
