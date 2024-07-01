@@ -24,20 +24,20 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="flex relative text-white text-center overflow-hidden px-20 pb-11">
-      <div className="relative z-10 flex flex-col justify-center mx-auto px-4 text-start">
-        <h1 className="text-4xl md:text-8xl font-bold mb-4 relative">
+    <section className="flex relative text-white text-center overflow-hidden md:px-20 pb-11">
+      <div className="relative z-10 flex flex-col justify-center mx-auto px-4 md:text-start">
+        <h1 className="text-5xl md:text-8xl font-bold mb-4 relative">
           <span className="inline-block font-findel">
            Morning Desk
           </span>
         </h1>
-        <h2 className="text-green-400 text-2xl md:text-3xl font-semibold mb-4">
+        <h2 className="text-green-400 text-xl md:text-3xl font-semibold mb-4 px-12 md:px-0">
         <span className="inline-block">
            {displayedText}
             <span className="font-extralight animate-blink">|</span>
           </span>
         </h2>
-        <div>
+        <div className='flex md:block text-sm justify-center'>
         <button className='bg-gray-200 p-4 text-black rounded-sm hover:scale-105 transition-all ease-linear mr-8'>Book Appointment</button>
         <button className='bg-gray-200 p-4 text-black rounded-sm hover:scale-105 transition-all ease-linear'>Contact Us</button>
         </div>
